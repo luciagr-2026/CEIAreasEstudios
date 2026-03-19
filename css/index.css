@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  width: 100%;
+  height: initial;
+}
+
+
+
+
+
+.Header {
+  width: 100%;
+  min-height: 6.25rem;
+  /* background-color: aqua; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.Header-logo {
+
+  display: block;
+  align-self: center;
+
+  max-width: 6.25rem;
+  margin-left: 1.25rem;
+
+
+}
+
+.Header-nav {
+  /* background-color: greenyellow; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  gap: 1rem;
+
+}
+
+@media (max-width: 81.25rem) {
+  .Header-nav {
+    display: none;
+  }
+}
+
+.Header-claim {
+  display: none;
+}
+
+@media (max-width: 81.25rem) {
+  .Header-claim {
+
+    display: block;
+    align-content: center;
+
+  }
+}
+
+.Header-ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  gap: 1rem;
+
+}
+
+.Header-li {
+  font-weight: 550;
+}
+
+.Burger{}
+  
+
+.Menu {}
+
+.Menu.isActive {}
+
+
+.Studies {
+  /* background-color: blue; */
+  width: 95%;
+  min-height: 31.25rem;
+  margin: 1rem auto 0;
+
+}
+
+.Studies-columns {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+
+  margin-top: 1rem;
+}
+
+@media (max-width: 56.25rem) {
+
+  .Studies-columns {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+
+.Studies-h1 {
+
+  font-size: 3.4375rem;
+  font-weight: 550;
+
+}
+
+.Studies-column .Studies-column--p {
+
+
+  grid-column: 1;
+  background-color: pink;
+
+
+}
+
+
+
+.Studies-p {
+
+
+  background-color: pink;
+  color: red;
+  padding: 2rem;
+
+
+}
+
+@media (max-width: 970px) {
+  .Studies-column .Studies-column--p {
+    grid-column: 1 /2;
+  }
+}
+
+
+
+.Studies-column-img {
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  grid-column: 2;
+
+}
+
+@media (max-width: 970px) {
+  .Studies-column-img {
+
+    display: none;
+
+
+  }
+}
+
+.Studies-nav {
+
+  grid-row: 1;
+  /* background-color: aliceblue; */
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+
+  text-transform: uppercase;
+  font-size: 2.1875rem;
+
+
+
+
+
+
+}
+
+.Studies-img {
+
+  width: 90%;
+
+
+  grid-row: 2;
+
+}
+
+
+.Slides {
+
+  width: 95%;
+
+  margin: 1rem auto 0;
+
+  /* background-color: yellow; */
+}
+
+.Slides-h2 {
+
+  font-size: 3.125rem;
+  font-weight: 450;
+
+}
+
+.Slides-blocks {
+
+  min-height: 18.75rem;
+  margin-top: 1rem;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 82.1875rem) {
+
+  .Slides-blocks {
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+@media (max-width: 60.625rem) {
+  .Slides-blocks {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.Slides-block {
+
+  /* background-color: orange; */
+  grid-row: span 2;
+
+}
+
+.Slides-img {
+  /* background-color: chartreuse; */
+  grid-row: 1;
+
+  /* min-height: 13rem; */
+
+}
+
+.Slides-h3 {
+  font-size: 1.5625rem;
+  font-weight: 450;
+}
+
+.Slides-text {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}
+
+.Menu-orange {
+  width: 100%;
+  min-height: 80vh;
+  background-color: orange;
+}
+
+.Header-orange {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.Orange-grid {
+  display: grid;
+}
+
+.Orange-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: aquamarine;
+  gap: 1rem;
+}
